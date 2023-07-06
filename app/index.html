@@ -15,7 +15,7 @@
         <ul></ul>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="/socket.io/socket.io.js"></script>        
         <script>
             var socket = io();
             var form = document.querySelector('form');
@@ -33,7 +33,7 @@
                 const li = document.createElement('li');
                 li.textContent = msg;
                 ul.appendChild(li);
-            });
+            });            
         </script>
     </body>
 </html>

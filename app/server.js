@@ -10,12 +10,15 @@ app.get('/', (req,res) =>{
 io.on('connection', socket => {
     console.log('Someone entered Chat Room');
     socket.on('chat message', msg => {
-        io.emit('chat message', msg);
-        console.log(msg);
+    io.emit('chat message', msg);
+    console.log(msg);
     });
     socket.on('disconnect', ()=> {
         console.log('Someone Left Chat Room');
     });
 });
 
-server.listen('3000', () => 'Sever is on');
+
+//http://localhost:8000/?
+server.listen('8000', () => console.log('Sever is on'));
+
