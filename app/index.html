@@ -6,10 +6,13 @@
          <meta name="viewport" content="width=device-width,initial-scale=1">
          <title>chatting room</title>
 
+
+
     </head>
     <body>
-        <form>
-            <input type="text">
+        <h1>chatting room</h1>
+        <form class="form">
+            <input type="text" placeholder="Enter message">
             <button>send</button>
         </form>
         <ul></ul>
@@ -36,4 +39,55 @@
             });            
         </script>
     </body>
+
+    <style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.4rem;
+	background: whitesmoke;
+	margin: 0;
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+ul {
+	list-style-position: inside;
+	width: 600px;
+	max-width: 100%;
+	background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+	padding: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+}
+
+li {
+	padding: 0 0 0 1rem;
+}
+
+
+::marker {
+	content: '^_^'
+}
+
+
+li:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+}
+
+li:first-child {
+	margin-top: 1rem;
+}
+
+li:last-child {
+	margin-bottom: 1rem;
+}
+    </style>
+    
 </html>
